@@ -1,0 +1,62 @@
+// Navbar V1.0
+// ----------------------------------------------------------------------------/
+
+.navbar {
+	width: 100%;
+	background-color: @navbar-background;
+
+	a {
+		color: @navbar-color;
+
+		&:focus {
+			outline: 0;
+		}
+
+		&.active,
+		&:hover {
+			color: @navbar-color-hover;
+			.transition();
+		}
+	}
+}
+
+.brand {
+	float: left;
+	display: block;
+	.margin-left(-@grid-gutters);
+	.padding-left(@grid-gutters);
+	.padding-right(@grid-gutters);
+	.font-size(20px);
+	.line-height(44px; 20px);
+
+	.logo {
+		.margin-right(5px);
+	}
+}
+
+.nav {
+	margin-bottom: 0;
+}
+
+.nav {
+	float: right;
+}
+
+.nav {
+	> li {
+		float: left;
+	}
+
+	a {
+		.padding(10px);
+	}
+}
+
+.nav > li:last-child {
+	.margin-right(-10px);
+}
+
+.navbar + .@{wrapper-class},
+.navbar + .@{wrapper-class}-full {
+	.padding-top(@wrapper-padding-top * 2);
+}

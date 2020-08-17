@@ -1,0 +1,36 @@
+// Sections
+// ----------------------------------------------------------------------------/
+
+.section {
+	.padding-bottom((@base-line-height * 3));
+	.padding-top((@base-line-height * 4));
+}
+
+.section:nth-child(even):not(.marketing) {
+	background-color: darken(@background-color, 5%);
+}
+
+.footer {
+	position: relative;
+	.padding-bottom((@base-line-height * 3));
+	.padding-top((@base-line-height * 4));
+	background-color: lighten(@font-color, 5%);
+	color: @background-color;
+}
+
+.small-footer {
+	.padding-top(@base-line-height);
+	background-color: @font-color;
+	color: @background-color;
+}
+
+.marketing {
+	background-color: #2d343d;
+	color: @background-color;
+	text-align: center;
+}
+
+.lead {
+	.margin-bottom(@h3-leading, @unit: rem);
+	.font-size(@h3-font-size);
+}
